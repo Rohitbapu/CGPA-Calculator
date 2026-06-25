@@ -1,0 +1,92 @@
+import { GradingSystem, Course } from "./types";
+
+export const GRADING_SYSTEM: GradingSystem = {
+  id: "10-point",
+  name: "Standard 10-Point Scale",
+  maxPoints: 10,
+  scales: [
+    { label: "O (Outstanding)", value: "O", points: 10 },
+    { label: "A+ (Excellent)", value: "A+", points: 9 },
+    { label: "A (Very Good)", value: "A", points: 8 },
+    { label: "B+ (Good)", value: "B+", points: 7 },
+    { label: "B (Above Average)", value: "B", points: 6 },
+    { label: "C (Average)", value: "C", points: 5 },
+    { label: "U (Reappear / Arrear)", value: "U", points: 0 },
+    { label: "AB (Absent)", value: "AB", points: 0 },
+  ],
+};
+
+export const SEMESTER_2_COURSES: Course[] = [
+  {
+    id: "sem2-1",
+    code: "MA25C03",
+    name: "Probability and Statistics",
+    credits: 4,
+    grade: "",
+    gradePoint: -1,
+  },
+  {
+    id: "sem2-2",
+    code: "PH25C02",
+    name: "Physics for Information Science",
+    credits: 3,
+    grade: "",
+    gradePoint: -1,
+  },
+  {
+    id: "sem2-3",
+    code: "IT25C01",
+    name: "Object Oriented Programming using C++",
+    credits: 3,
+    grade: "",
+    gradePoint: -1,
+  },
+  {
+    id: "sem2-4",
+    code: "CH25C02",
+    name: "Environmental Science",
+    credits: 2,
+    grade: "",
+    gradePoint: -1,
+  },
+  {
+    id: "sem2-5",
+    code: "EC25C01",
+    name: "Fundamentals of Digital Electronics",
+    credits: 3,
+    grade: "",
+    gradePoint: -1,
+  },
+  {
+    id: "sem2-6",
+    code: "ME25C01",
+    name: "Engineering Graphics and Design",
+    credits: 3,
+    grade: "",
+    gradePoint: -1,
+  },
+  {
+    id: "sem2-7",
+    code: "TA25C02",
+    name: "Tamils and Technology",
+    credits: 1,
+    grade: "",
+    gradePoint: -1,
+  },
+  {
+    id: "sem2-8",
+    code: "EN25C02",
+    name: "English proficiency and soft skills",
+    credits: 3,
+    grade: "",
+    gradePoint: -1,
+  },
+  {
+    id: "sem2-9",
+    code: "IT25C02",
+    name: "Object Oriented Programming using C++ Laboratory",
+    credits: 2,
+    grade: "",
+    gradePoint: -1,
+  },
+];
